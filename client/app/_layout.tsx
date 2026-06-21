@@ -7,7 +7,7 @@ import * as SplashScreen from "expo-splash-screen";
 // SplashScreen.preventAutoHideAsync();
 
 function AuthGuard() {
-  const { isSignedIn } = { isSignedIn: false }; // TODO: implement auth logic
+  const { isSignedIn } = { isSignedIn: true }; // TODO: implement auth logic
   if (!isSignedIn) {
     return <Redirect href="/(auth)" />;
   } else if (isSignedIn) {
