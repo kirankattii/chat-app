@@ -57,7 +57,7 @@ export default function StoryViewer({ userStory, onClose }: Props) {
     animRef.current?.stop();
     if (currentIndex > 0) {
       setCurrentIndex((i) => i - 1);
-    } else {
+    } else { 
       onClose();
     }
   };
